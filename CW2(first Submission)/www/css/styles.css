@@ -1,0 +1,407 @@
+/* styling for body*/
+body {
+    background-color: #fffad72a;
+    height: 1750px;
+    margin-top: 91.5px;
+    width: 500px;
+    display: flex;
+    position: relative;
+}
+
+/* styling for navigation bar*/
+nav {
+    margin: 0 auto;
+    justify-content: space-between;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    background-color: lightgray;
+}
+
+nav a {
+    display: block;
+    transition-duration: background-color .22s ease, color .22s ease;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 20px;
+    padding: 10px 1.5rem;
+    color: black;
+    cursor: pointer;
+}
+
+#na {
+    position: relative;
+}
+
+/*styling for dropdown menu*/
+#nav:hover {
+    text-decoration: none;
+    color: white;
+    background-color: grey;
+}
+
+#na:hover {
+    text-decoration: none;
+    color: white;
+    background-color: grey;
+}
+
+.submenu {
+    position: absolute;
+    background-color: lightgray;
+    width: 140px;
+    left: 230px;
+    display: none;
+}
+
+div:hover>.submenu {
+    display: block;
+    animation: slideup .3s ease;
+}
+
+.search {
+    margin-left: 180px;
+}
+
+.searchbar {
+    width: 100%;
+    max-width: 700px;
+    background: rgba(255, 255, 255, 0.2);
+    display: flex;
+    align-items: center;
+    border-radius: 60px;
+    padding: 10px 20px;
+    backdrop-filter: blur(4px) saturate(180%);
+}
+
+.searchbar input {
+    background: transparent;
+    flex: 1;
+    border: 0;
+    outline: none;
+    font-size: 20px;
+    color: black;
+}
+
+.searchbar button img {
+    width: 15px;
+    margin-bottom: 5px;
+}
+
+.searchbar button {
+    margin-left: 50px;
+    border: 0;
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    background: lightcoral;
+    cursor: pointer;
+}
+
+.cart button img {
+    width: 38px;
+}
+
+.cart button {
+    margin-left: 20px;
+    text-align: justify;
+    border: 0;
+    background: lightgray;
+    padding: 10px 1.5rem;
+    cursor: pointer;
+}
+
+@keyframes slideup {
+    0% {
+        opacity: 0;
+        transform: translateY(18px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: none;
+    }
+}
+
+/* styling for home page*/
+.slider {
+    border-radius: 10px;
+    overflow: hidden;
+    height: 720px;
+    width: 1518px;
+}
+
+.slides {
+    width: 1518px;
+    display: flex;
+}
+
+.slides input {
+    display: none;
+}
+
+.slide {
+    width: 1518px;
+    transition: 2s;
+}
+
+.slide img {
+    height: 720px;
+    width: 1518px;
+}
+
+.nav-man {
+    position: absolute;
+    width: 720px;
+    margin-top: -40px;
+    margin-left: 399px;
+    display: flex;
+    justify-content: center;
+}
+
+.man-btn {
+    border: 2px solid grey;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.man-btn:not(:last-child) {
+    margin-right: 40px;
+}
+
+.man-btn:hover {
+    background: grey;
+}
+
+#radio1:checked~.first {
+    margin-left: 0;
+}
+
+#radio2:checked~.first {
+    margin-left: -100%;
+}
+
+#radio3:checked~.first {
+    margin-left: -200%;
+}
+
+.nav-bar {
+    position: absolute;
+    display: flex;
+    width: 1518px;
+    justify-content: center;
+    margin-top: -40px;
+}
+
+.nav-bar div {
+    border: 2px solid grey;
+    padding: 5px;
+    border-radius: 10px;
+    transition: 1s;
+}
+
+.nav-bar div:not(:last-child) {
+    margin-right: 40px;
+}
+
+#radio1:checked~.nav-bar .auto-btn1 {
+    background: grey;
+}
+
+#radio2:checked~.nav-bar .auto-btn2 {
+    background: grey;
+}
+
+#radio3 :checked~.nav-bar .auto-btn3 {
+    background: grey;
+}
+
+.products {
+    width: 20%;
+    margin: 15px;
+    box-sizing: border-box;
+    float: left;
+    text-align: center;
+    border-radius: 20%;
+    cursor: pointer;
+    padding-top: 10px;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+    transition: .4s;
+    background: #FDFDFD;
+}
+
+.products:hover {
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    transform: translate(0px, -8px);
+}
+
+.products img {
+    width: 200px;
+    height: 200px;
+    text-align: center;
+    margin: 0 auto;
+    display: block;
+}
+
+.products p {
+    text-align: center;
+    color: #b2bec3;
+    padding-top: 0 8px;
+}
+
+.products h6 {
+    font-size: 26px;
+    text-align: center;
+    color: #222f3e;
+    margin: 0;
+}
+
+.products button {
+    background: grey;
+    text-align: center;
+    font-size: 24px;
+    color: #fff;
+    padding: 15px;
+    width: 300px;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+    margin-top: 5px;
+    border-bottom-left-radius: 60px;
+    border-bottom-right-radius: 60px;
+}
+
+/* styling for sorting menu*/
+.box {
+    border-style: solid;
+    border-width: 1px;
+    position: absolute;
+    left: 270%;
+    margin-top: -30px;
+    transform: translate(-50%, -50%);
+}
+
+.box select {
+    background-color: #fffad72a;
+    color: black;
+    padding: 12px;
+    width: 200px;
+    border: none;
+    font-size: 15px;
+    outline: none;
+}
+
+.box::before {
+    position: absolute;
+    top: 0;
+    right: 10;
+    width: 25%;
+    text-align: center;
+    font-size: 20px;
+    line-height: 45px;
+    color: rgba(255, 255, 255, 0.5);
+    background-color: rgba(255, 255, 255, 0.1);
+    pointer-events: none;
+}
+
+.box select option {
+    padding: 30px;
+}
+
+/* styling for staffportal buttons*/
+.home-button {
+    height: 65px;
+    width: 150px;
+    border-radius: 25px;
+    color: white;
+    font-size: 20px;
+    color: black;
+}
+
+.home-button1 {
+    height: 65px;
+    width: 300px;
+    border-radius: 25px;
+    color: white;
+    font-size: 20px;
+    color: black;
+}
+
+.home-button1:hover {
+    background: grey;
+    color: white;
+}
+
+.home-button:hover {
+    background: grey;
+    color: white;
+}
+
+/*styling for brands page*/
+.logos button:hover {
+    text-decoration: none;
+    transform: translate(0px, 3px);
+}
+
+/* styling for footer buttons*/
+.button {
+    border-radius: 25px;
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    background-color: black;
+    color: white;
+}
+
+.button:hover {
+    color: black;
+    background-color: grey;
+}
+
+/* styling for footer*/
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.footer-block {
+    background-color: black;
+    padding-bottom: 0px;
+    position: absolute;
+    bottom: 0;
+}
+
+.Main-footer {
+    width: 1518px;
+    height: 115px;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    margin-right: 20px;
+}
+
+.social-footer {
+    margin-top: 70px;
+    margin-right: 200px;
+    margin-left: -350px;
+}
+
+a:hover {
+    text-decoration: none;
+}
